@@ -32,4 +32,17 @@ public class Plant {
 
 	@Column(nullable = false)
 	private LocalDate plantedDate;
+
+	@Column(nullable = false)
+	private String plantType;
+
+	public Plant() {
+	}
+
+	public Plant(String spices, String nickname, LocalDate plantedDate, String plantType) {
+		this.spices = spices;
+		this.nickname = nickname;
+		this.plantedDate = plantedDate;
+		this.plantType = plantType;
+	}
 }
