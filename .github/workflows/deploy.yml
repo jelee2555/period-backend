@@ -44,7 +44,7 @@ jobs:
             cd ~/period
             
             echo "Moving jar into build context"
-            cp build/libs/app.jar .
+            cp build/libs/*.jar app.jar
             
             echo "Creating Dockerfile"
             echo 'FROM openjdk:17-slim
