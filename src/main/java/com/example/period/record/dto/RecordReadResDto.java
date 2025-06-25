@@ -28,7 +28,7 @@ public class RecordReadResDto {
 		return RecordReadResDto.builder()
 			.id(record.getId())
 			.nickname(record.getPlant().getNickname())
-			.species(record.getPlant().getSpices())
+			.species(record.getPlant().getSpecies())
 			.imageUrl(record.getImgUrl())
 			.temperature(record.getTemperature())
 			.humidity(record.getHumidity())

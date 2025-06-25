@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.period.pest.entity.Pest;
 import com.example.period.plant.entity.Plant;
 
 import jakarta.persistence.CascadeType;
@@ -35,7 +36,6 @@ public class Record {
 	private Double humidity;
 	private Double plantWeight;
 	private LocalDate harvestDate;
-	private String pest;
 	private String memo;
 
 	@Enumerated(EnumType.STRING)
