@@ -25,7 +25,7 @@ public class Plant {
 	private User user;
 
 	@Column(nullable = false)
-	private String spices;
+	private String species;
 
 	@Column(nullable = false)
 	private String nickname;
@@ -39,8 +39,8 @@ public class Plant {
 	public Plant() {
 	}
 
-	public Plant(String spices, String nickname, LocalDate plantedDate, String plantType) {
-		this.spices = spices;
+	public Plant(String species, String nickname, LocalDate plantedDate, String plantType) {
+		this.species = species;
 		this.nickname = nickname;
 		this.plantedDate = plantedDate;
 		this.plantType = plantType;

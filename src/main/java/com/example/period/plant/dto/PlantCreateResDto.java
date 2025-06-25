@@ -18,7 +18,7 @@ public class PlantCreateResDto {
 	private String plantType;
 	private String nickname;
 	private LocalDate plantedDate;
-	private String spices;
+	private String species;
 
 	public static PlantCreateResDto fromPlant(Plant plant) {
 		return PlantCreateResDto.builder()
@@ -26,6 +26,6 @@ public class PlantCreateResDto {
 			.nickname(plant.getNickname())
 			.plantType(plant.getPlantType())
 			.plantedDate(plant.getPlantedDate())
-			.spices(plant.getSpices()).build();
+			.species(plant.getSpecies()).build();
 	}
 }
