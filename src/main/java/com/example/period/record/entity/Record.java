@@ -47,4 +47,7 @@ public class Record {
 
 	@OneToMany(mappedBy = "record", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<RecordPest> recordPests = new ArrayList<>();
+
+	public Record() {
+	}
 }
